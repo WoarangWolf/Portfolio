@@ -1,0 +1,22 @@
+.content {
+    margin: 1rem;
+    flex: 4;
+}
+
+.content section h2 {
+    color: #4287F7;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin: 0;
+    padding: 1rem;
+}
+
+.content section p {
+    color: #D4D4D4;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-all;
+    white-space: normal;
+}

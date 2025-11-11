@@ -1,0 +1,12 @@
+:root {
+  font-family: Constantia, Cambria, Georgia, 'Courier New', Courier, serif;
+
+  /* color-scheme: light dark; */
+  background-color: #24283B;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

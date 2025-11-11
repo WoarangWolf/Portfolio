@@ -1,0 +1,49 @@
+.sidebar {
+    margin: 1rem;
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    margin: 10px auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    border-radius: 100%;
+    border: 3px solid #c09e9e;
+}
+
+.profile-info {
+    text-align: center;
+    margin: 10px;
+}
+
+.profile-info p {
+    color: #8FCE6A;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+.profile-details {
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-details li {
+    margin: 10px 0;
+}
+
+.profile-details li a {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    text-decoration: none;
+    color: #FF9E64;
+}
