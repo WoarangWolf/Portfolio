@@ -2,7 +2,7 @@
     margin: 1rem;
     flex: 1;
     min-width: 200px;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .profile-picture {
@@ -27,7 +27,7 @@
 .profile-info p {
     color: #8FCE6A;
     font-weight: bold;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     padding: 10px 0px;
     margin: 10px;
 }
@@ -43,7 +43,7 @@
 }
 
 .profile-details li a {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     color: #FF9E64;
 }

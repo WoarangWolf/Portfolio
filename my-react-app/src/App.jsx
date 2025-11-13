@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/header'
-import Sidebar from './components/sidebar'
-import Content from './components/content'
-import Footer from './components/footer'
+import Header from './components/header.jsx'
+import Sidebar from './components/sidebar.jsx'
+import Content from './components/content.jsx'
+import Footer from './components/footer.jsx'
 
 function App() {
     const [page, setPage] = useState('introduction');
@@ -13,7 +13,9 @@ function App() {
             <Header />
             <div className="main-section">
                 <Sidebar setPage={setPage} />
-                <Content page={page} />
+                <div className="content-wrapper">
+                    <Content page={page} />
+                </div>
             </div>
             <Footer />
         </div>

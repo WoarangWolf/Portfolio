@@ -1,22 +1,43 @@
 .content {
     margin: 1rem;
     flex: 4;
+    min-width: 350px;
 }
 
 .content section h2 {
     color: #4287F7;
     font-size: clamp(1.5rem, 2vw, 2rem);
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .content section p {
     color: #D4D4D4;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-size: clamp(1rem, 1.05vw, 1.1rem);
     line-height: 1.6;
     margin: 0;
     padding: 1rem;
-    overflow-wrap: break-word;
-    word-wrap: break-all;
-    white-space: normal;
+}
+
+.introduction-section h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+.introduction-section img {
+    float: right;
+    margin: 0px 10px;
+    max-width: 20%;
+}
+
+.introduction-section div p {
+    color: #87A5CE;
+    padding: 0.5rem 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.introduction-section div p strong {
+    color: #F7768E;
 }

@@ -4,7 +4,7 @@ function Sidebar({ setPage }) {
     return(
         <aside className="sidebar">
             <div className="profile-picture">
-                <img src="/images/dragon.png" alt="that's me"/>
+                <img src="/images/avatar.png" alt="that's me"/>
             </div>
             <div className="profile-info">
                 <p>Thanh Quang, Doan</p>
