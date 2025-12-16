@@ -1,7 +1,7 @@
 .sidebar {
     margin: 1rem;
     flex: 1;
-    min-width: 200px;
+    min-width: 150px;
     max-width: 300px;
 }
 
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 85%;
+    max-width: 65%;
     margin: 10px auto;
 }
 

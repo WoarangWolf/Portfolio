@@ -1,3 +1,5 @@
+/* Content Component Styles */
+
 .content {
     margin: 1rem;
     flex: 4;
@@ -7,6 +9,8 @@
 .content section h2 {
     color: #4287F7;
     font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+    font-style: italic;
     margin: 0;
     padding: 0.5rem;
 }
@@ -19,10 +23,7 @@
     padding: 1rem;
 }
 
-.introduction-section h2 {
-    text-align: center;
-    font-style: italic;
-}
+/* Introduction */
 
 .introduction-section img {
     float: right;
@@ -40,4 +41,100 @@
 
 .introduction-section div p strong {
     color: #F7768E;
+}
+
+/* Education */
+
+.education-section div p {
+    color: #87A5CE;
+    padding: 0.5rem 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.hutech-education li {
+    list-style-image: url('images/logo HUTECH.png');
+}
+
+.mohawk-education li {
+    list-style-image: url('images/logo Mohawk.png');
+}
+
+.education-section div h3 {
+    color: #FF9E64;
+    font-size: 1.25rem;
+    margin: 1rem 0.5rem;
+}
+
+.education-section div ul {
+    padding-left: 4rem;
+}
+
+.education-section div ul li {
+    color: #87A5CE; 
+    margin: 0.5rem 0rem;
+}
+
+/* Work experience */
+
+.work-experience-section div p {
+    color: #87A5CE;
+    padding: 0.5rem 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.vietuytin-work li {
+    list-style-image: url('images/logo vietuytin.png');
+}
+
+.asian-school-work li {
+    list-style-image: url('images/logo asia.png');
+}
+
+.ydr-work li {
+    list-style-image: url('images/logo YDR.png');
+}
+
+.work-experience-section div h3 {
+    color: #FF9E64;
+    font-size: 1.25rem;
+    margin: 1rem 0.5rem;
+}
+
+.work-experience-section div ul {
+    padding-left: 4rem;
+}
+
+.work-experience-section div ul li {
+    color: #87A5CE; 
+    margin: 0.5rem 0rem;
+}
+
+/* Hobbies */
+
+.hobbies-section div p {
+    color: #87A5CE;
+    padding: 0.5rem 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.hobbies-section div h3 {
+    color: #FF9E64;
+    font-size: 1.25rem;
+    margin: 1rem 0.5rem;
+}
+
+.hobbies-section div ul {
+    padding-left: 4rem;
+}
+
+.hobbies-section div ul li {
+    color: #87A5CE; 
+    margin: 0.5rem 0rem;
+    list-style-type: square;
 }
