@@ -1,8 +1,18 @@
 import './content.css';
 import { greeting } from './greeting.js';
+import { useState } from 'react';
 
 
 function Content({page}) {
+    const [activeHobby, setActiveHobby] = useState(null);
+
+    const hobbies = [
+        { id: "singing", label: "Singing & Playing Guitar" },
+        { id: "learning", label: "Learning Some Random Interest Knowledge/Articles" },
+        { id: "coding", label: "Reviewing & Practicing Programming Languages" },
+        { id: "gaming", label: "Playing Games to Relax and Have Fun" },
+    ];
+
     return(
         <div className="content">
             {page === 'introduction' && (
@@ -134,18 +144,44 @@ function Content({page}) {
                     <h2>Hobbies</h2>
                     <div>
                         <p>
-                            In my free time, I enjoy a variety of hobbies that help me relax and stay creative. Some of my favorite activities include:
+                            In my free time, I enjoy a variety of hobbies that help me relax and stay creative. Some of my favorite activities are as follows <em>(Please, click on each hobby to see more details)</em>:
                         </p>
                         <ul className="hobbies-list">
-                            <li>Singing, and, sometimes, playing guitar</li>
-                            <li>Learning some interesting random knowledge/articles</li>
-                            <li>Reviewing & practicing programming languages that I have learned</li>
-                            <li>Playing some games to relax and have fun</li>
+                            {hobbies.map((hobby) => (
+                                <li key={hobby.id}>
+                                    <button onClick={() => setActiveHobby(hobby.id)}>
+                                        {hobby.label}
+                                    </button>
+                                </li>
+                            ))}
                         </ul>
                     </div>
-                    <div>
+                    {activeHobby === "singing" && (
+                        <div>
+                            <p>
+                                I love singing and playing the guitar. Music is a great way for me to express myself and unwind after a long day.
+                            </p>
+                            <video width="auto" height="auto" controls>
+                                <source src="/videos/singing.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    )}
+                    {activeHobby === "learning" && (
+                        <div>
 
-                    </div>
+                        </div>
+                    )}
+                    {activeHobby === "coding" && (
+                        <div>
+
+                        </div>
+                    )}
+                    {activeHobby === "gaming" && (
+                        <div>
+
+                        </div>
+                    )}
                 </section>
             )}
         </div>

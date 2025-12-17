@@ -42,8 +42,19 @@
     margin: 10px 0;
 }
 
-.profile-details li a {
+.profile-details li button {
+    font-family: inherit;
+    font-weight: bold;
     font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     color: #FF9E64;
+    background: none;
+    border: none;
+    text-shadow: 4px 4px 10px #c7222200;
+    transition: font-size 0.25s ease, text-shadow 0.25s ease;
+}
+
+.profile-details li button:hover {
+    font-size: clamp(1.1rem, 2.2vw, 1.65rem);
+    text-shadow: 4px 4px 10px #c72222a9;
 }

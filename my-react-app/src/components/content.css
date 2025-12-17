@@ -129,12 +129,38 @@
     margin: 1rem 0.5rem;
 }
 
-.hobbies-section div ul {
-    padding-left: 4rem;
+.hobbies-list {
+    padding-left: 3.5rem;
 }
 
-.hobbies-section div ul li {
+.hobbies-list li {
     color: #87A5CE; 
     margin: 0.5rem 0rem;
-    list-style-type: square;
+}
+
+.hobbies-list button {
+    font-size: 1rem;
+    color: #87A5CE;
+    text-align: left;
+    background: none;
+    border: none;
+    text-shadow: 2px 2px 5px #87a5ce00;
+    transition: font-size 0.25s ease, text-shadow 0.25s ease;
+}
+
+.hobbies-list li:hover {
+    font-size: 1.1rem;
+    color: #FF9E64;
+}
+
+.hobbies-list button:hover {
+    font-size: 1.1rem;
+    color: #FF9E64;
+    text-shadow: 2px 2px 5px #c72222a9;
+}
+
+.hobbies-section video {
+    max-width: 30%;
+    display: block;
+    margin: 1rem auto;
 }
