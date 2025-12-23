@@ -23,15 +23,18 @@
     padding: 1rem;
 }
 
-/* Introduction */
+/* About Me */
 
-.introduction-section img {
+.about-me-section img {
     float: right;
     margin: 0px 10px;
     max-width: 20%;
+    border-radius: 15%;
+    border: 3px solid #c09e9e;
+    box-shadow: 6px 6px 15px #c09e9e;
 }
 
-.introduction-section div p {
+.about-me-section div p {
     color: #87A5CE;
     padding: 0.5rem 0.5rem;
     text-align: justify;
@@ -39,7 +42,7 @@
     text-indent: 2rem;
 }
 
-.introduction-section div p strong {
+.about-me-section div p strong {
     color: #F7768E;
 }
 
@@ -62,7 +65,7 @@
 }
 
 .education-section div h3 {
-    color: #FF9E64;
+    color: #edf84f;
     font-size: 1.25rem;
     margin: 1rem 0.5rem;
 }
@@ -99,7 +102,7 @@
 }
 
 .work-experience-section div h3 {
-    color: #FF9E64;
+    color: #edf84f;
     font-size: 1.25rem;
     margin: 1rem 0.5rem;
 }
@@ -113,54 +116,32 @@
     margin: 0.5rem 0rem;
 }
 
-/* Hobbies */
+/* Skills */
 
-.hobbies-section div p {
+.skills-section div ul {
     color: #87A5CE;
+    margin: 0rem 1rem;
     padding: 0.5rem 0.5rem;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 2rem;
-}
-
-.hobbies-section div h3 {
-    color: #FF9E64;
-    font-size: 1.25rem;
-    margin: 1rem 0.5rem;
-}
-
-.hobbies-list {
-    padding-left: 3.5rem;
-}
-
-.hobbies-list li {
-    color: #87A5CE; 
-    margin: 0.5rem 0rem;
-}
-
-.hobbies-list button {
-    font-size: 1rem;
-    color: #87A5CE;
     text-align: left;
-    background: none;
-    border: none;
-    text-shadow: 2px 2px 5px #87a5ce00;
-    transition: font-size 0.25s ease, text-shadow 0.25s ease;
 }
 
-.hobbies-list li:hover {
-    font-size: 1.1rem;
-    color: #FF9E64;
+.skills-section div h3 {
+    color: #edf84f;
+    margin: 0.5rem;
+    font-size: 1.25rem;
 }
 
-.hobbies-list button:hover {
-    font-size: 1.1rem;
-    color: #FF9E64;
-    text-shadow: 2px 2px 5px #c72222a9;
+.skills-section div h4 {
+    color: #6af341;
+    font-size: 1.125rem;
+    margin: 0.5rem 0.5rem;
 }
 
-.hobbies-section video {
-    max-width: 30%;
-    display: block;
-    margin: 1rem auto;
+.programming-languages {
+    margin: 0.5rem 1rem;
+}
+
+.programming-languages img {
+    max-width: 75px;
+    margin-right: 25px;
 }

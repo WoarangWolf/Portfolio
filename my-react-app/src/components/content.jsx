@@ -1,56 +1,43 @@
 import './content.css';
 import { greeting } from './greeting.js';
-import { useState } from 'react';
 
 
 function Content({page}) {
-    const [activeHobby, setActiveHobby] = useState(null);
-
-    const hobbies = [
-        { id: "singing", label: "Singing & Playing Guitar" },
-        { id: "learning", label: "Learning Some Random Interest Knowledge/Articles" },
-        { id: "coding", label: "Reviewing & Practicing Programming Languages" },
-        { id: "gaming", label: "Playing Games to Relax and Have Fun" },
-    ];
-
     return(
         <div className="content">
-            {page === 'introduction' && (
-                <section className="introduction-section">
+            {page === 'about-me' && (
+                <section className="about-me-section">
                     <h2>{greeting()}</h2>
-                    <img src="/images/officeboy.png" alt="greeting"/>
+                    <img src="/images/me.png" alt="me"/>
                     <div>
                         <p>
-                            Welcome to my portfolio! I'm excited to share my journey, skills, and passions with you.
-                        </p>
-                        <p>
-                            My name is Thanh Quang Doan, and I am an international student from Vietnam, currently living and studying in Canada.
-                            I am pursuing a major in <strong>Software Development</strong>, with the goal of becoming a <strong>Front-end Developer</strong> first,
-                            and later expanding into <strong>Full-stack Developer</strong>, <strong>Mobile APp Development</strong>,
-                            <strong>Web Application Development</strong>, or even <strong>Game Development</strong>.
+                            My name is Thanh Quang Doan. I am an international student from Vietnam, currently living in Hamilton
+                            and studying <strong>Software Development</strong> at Mohawk College. My career goal is to begin as a <strong>Front-end Developer</strong> and
+                            gradually expand into <strong>Full-stack Development</strong>, <strong>Mobile App Development</strong>, <strong>Web Application Development</strong>,
+                            or <strong>Game Development</strong>.
                         </p>
                         <p>
                             Although I do not yet have practical experience in IT or Software Development, I am actively studying in college
-                            and continuously exploring additional knowledge on my own. I also practice problem-solving by
-                            completing coding challenges on <strong>LeetCode</strong> whenever I have free time.
+                            and continuously improving my skills through self-learning. In my free time, I also practice problem-solving by
+                            completing coding challenges on <strong>LeetCode</strong>.
                         </p>
                         <p>
-                            Before studying IT, I had no background in programming. I graduated with a degree in <strong>English Language</strong> in
-                            my home country, specializing in <strong>Translation and Interpretation</strong>, mainly translating notarized office documents.
-                            There was also a short period of time that I was working as an assistant for a Director of an International School.
-                            Later on, I switched to working as an illustrator for construction projects at a Japanese Company,
-                            as I wanted to challenge myself in a new field and I had basic Japanese language skills as well by self-studying at that time.
+                            Before entering the IT field, I had no programming background. I earned a degree in <strong>English Language</strong> in Vietnam,
+                            specializing in <strong>Translation and Interpretation</strong>, with experience translating notarized documents.
+                            I also worked briefly as <strong>An Assistant to the Director of an international school</strong>. Later, I transitioned into a role
+                            as a <strong>Construction Project Illustrator</strong> at a Japanese company, where I challenged myself in a new field
+                            while applying my self-studied Japanese language skills.
                         </p>
                         <p>
-                            Now, I am fully committed to pursuing Software Development because I have a strong interest in technology and programming.
-                            I have been familiar with computers since I was young, so learning, exploring, and applying new IT knowledge
+                            Now, I am fully committed to pursuing Software Development, driven by a strong interest in technology and programming.
+                            I have been familiar with computers since I was young, so, learning and applying new IT knowledge
                             has always felt natural and enjoyable for me.
                         </p>
                         <p>
                             To learn more about me, please have a look at my portfolio, which I built using HTML, CSS, React, and Tailwind CSS.
-                            Both React and Tailwind CSS are technologies I learned independently without any formal training,
-                            so I hope you will kindly understand if there are any imperfections. I am always eager to improve,
-                            correct mistakes, and continue learning.
+                            Both React and Tailwind CSS are technologies that I learned independently without any formal training,
+                            I hope you will kindly understand if there are any imperfections, and I really appreciate if there is any
+                            feedback and opportunities to improve. I am always eager to learn, refine my skills, and grow as a developer.
                         </p>
                     </div>
                 </section>
@@ -81,24 +68,9 @@ function Content({page}) {
                     <div>
                         <p>
                             There is a ten-year gap between my academic programs because, after completing my undergraduate degree in my home country,
-                            I entered the workforce to support myself and my family. During this period, I gained experience
-                            both in roles related to my major and in new fields where I received on-the-job training. After a decade of working,
+                            I entered the workforce to support myself and my family. After a decade of working,
                             I developed a strong desire to continue my education in a different discipline. My long-standing interest in
                             technology and information systems led me to pursue further studies abroad, and I chose Mohawk College to begin this transition.
-                        </p>
-                        <p>
-                            I am committed to developing the skills and knowledge necessary to succeed in the IT industry.
-                            My dedication to continuous learning, combined with my passion for technology and programming, drives me to overcome challenges
-                            and adapt quickly. Further details about my professional background can be found in the Work Experience section.
-                        </p>
-                        <p>
-                            Additionally, I previously studied Japanese independently for over six months and attained the JLPT N4 certificate.
-                            This self-directed learning enabled me to secure a position at a Japanese company despite not having prior experience
-                            in technical illustration for construction drawings. Due to financial responsibilities,
-                            I had to set aside my Japanese studies and focus entirely on learning and performing in a new field—technical illustration
-                            for construction drawings. Through on-the-job training and self-directed learning, I was able to adapt quickly and
-                            carry out the role effectively. This experience reinforces my confidence that I can learn, adapt,
-                            and excel in the IT field as well.
                         </p>
                     </div>
                 </section>
@@ -113,9 +85,6 @@ function Content({page}) {
                             My first role was as a translator, where I honed my language skills and attention to detail because I mainly worked on paper documents, and it required high accuracy.
                             I then transitioned to an assistant role at an international school, where I gained organizational and communication skills.
                             Later, I took on a position as a technical illustrator for construction drawings at a Japanese company.
-                        </p>
-                        <p>
-                            Here are some details about my work experience:
                         </p>
                         <h3>VIET UY TIN CO., LTD.</h3>
                         <ul className="vietuytin-work">
@@ -139,51 +108,44 @@ function Content({page}) {
                 </section>
             )}
 
-            {page === 'hobbies' && (
-                <section className="hobbies-section">
-                    <h2>Hobbies</h2>
+            {page === 'skills' && (
+                <section className="skills-section">
+                    <h2>Personal Skills</h2>
                     <div>
-                        <p>
-                            In my free time, I enjoy a variety of hobbies that help me relax and stay creative. Some of my favorite activities are as follows <em>(Please, click on each hobby to see more details)</em>:
-                        </p>
-                        <ul className="hobbies-list">
-                            {hobbies.map((hobby) => (
-                                <li key={hobby.id}>
-                                    <button onClick={() => setActiveHobby(hobby.id)}>
-                                        {hobby.label}
-                                    </button>
-                                </li>
-                            ))}
+                        <h3>DEVELOPMENT SKILLS</h3>
+                        <h4>Programming languages</h4>
+                        <div className="programming-languages">
+                            <img src="/images/python.png" alt="Python"/>
+                            <img src="/images/java.png" alt="Java"/>
+                            <img src="/images/Csharp.png" alt="C#"/>
+                        </div>
+                        <h4>Web Development</h4>
+                        <div className="programming-languages">
+                            <img src="/images/html.png" alt="HTML"/>
+                            <img src="/images/css.png" alt="CSS"/>
+                            <img src="/images/javascript.png" alt="JavaScript"/>
+                            <img src="/images/php.png" alt="PHP"/>
+                            <img src="/images/react.png" alt="React"/>
+                            <img src="/images/tailwindcss.png" alt="Tailwind CSS"/>
+                        </div>
+                        <h3>SOFT SKILLS</h3>
+                        <ul className="soft-skills-list">
+                            <li>Effective communication</li>
+                            <li>Problem-solving</li>
+                            <li>Time management</li>
+                            <li>Adaptability</li>
+                            <li>Teamwork</li>
                         </ul>
                     </div>
-                    {activeHobby === "singing" && (
-                        <div>
-                            <p>
-                                I love singing and playing the guitar. Music is a great way for me to express myself and unwind after a long day.
-                            </p>
-                            <video width="auto" height="auto" controls>
-                                <source src="/videos/singing.mp4" type="video/mp4"/>
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    )}
-                    {activeHobby === "learning" && (
-                        <div>
-
-                        </div>
-                    )}
-                    {activeHobby === "coding" && (
-                        <div>
-
-                        </div>
-                    )}
-                    {activeHobby === "gaming" && (
-                        <div>
-
-                        </div>
-                    )}
                 </section>
             )}
+
+            {page === 'projects' && (
+                <section className="projects-section">
+                    <h2>Projects</h2>
+                </section>
+            )}
+
         </div>
     )
 }

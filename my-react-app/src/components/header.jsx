@@ -3,7 +3,7 @@ import './header.css';
 function Header() {
     return(
         <header className="header">
-            <h1>Software Development Student<br/>Who Seeks For More Experience</h1>
+            <h1>Welcome to My Portfolio</h1>
         </header>
     )
 }

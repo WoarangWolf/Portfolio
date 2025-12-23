@@ -5,7 +5,7 @@
     max-width: 300px;
 }
 
-.profile-picture {
+.profile-picture-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,23 @@
     margin: 10px auto;
 }
 
-.profile-picture img {
+.profile-picture-div img {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 15%;
     border: 3px solid #c09e9e;
+    box-shadow: 6px 6px 15px #c09e9e;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .profile-info {
@@ -42,6 +55,10 @@
     margin: 10px 0;
 }
 
+.profile-details li button.active {
+    color: #F7768E;
+}
+
 .profile-details li button {
     font-family: inherit;
     font-weight: bold;
@@ -56,5 +73,5 @@
 
 .profile-details li button:hover {
     font-size: clamp(1.1rem, 2.2vw, 1.65rem);
-    text-shadow: 4px 4px 10px #c72222a9;
+    text-shadow: 5px 5px 15px #ff1c1c;
 }
