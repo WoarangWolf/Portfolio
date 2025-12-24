@@ -12,7 +12,7 @@ function App() {
         <div className="app">
             <Header />
             <div className="main-section">
-                <Sidebar page={page} setPage={setPage} />
+                <Sidebar page={page} setPage={setPage} className="sidebar"/>
                 <div className="content-wrapper">
                     <Content page={page} />
                 </div>

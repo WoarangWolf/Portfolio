@@ -4,7 +4,7 @@ import { greeting } from './greeting.js';
 
 function Content({page}) {
     return(
-        <div className="content">
+        <div key={page} className="content">
             {page === 'about-me' && (
                 <section className="about-me-section">
                     <h2>{greeting()}</h2>
@@ -77,7 +77,7 @@ function Content({page}) {
             )}
 
             {page === 'work-experience' && (
-                <section  className="work-experience-section">
+                <section className="work-experience-section">
                     <h2>Work Experience</h2>
                     <div>
                         <p>
@@ -111,31 +111,48 @@ function Content({page}) {
             {page === 'skills' && (
                 <section className="skills-section">
                     <h2>Personal Skills</h2>
-                    <div>
-                        <h3>DEVELOPMENT SKILLS</h3>
-                        <h4>Programming languages</h4>
-                        <div className="programming-languages">
-                            <img src="/images/python.png" alt="Python"/>
-                            <img src="/images/java.png" alt="Java"/>
-                            <img src="/images/Csharp.png" alt="C#"/>
+                    <div className="skills-container">
+                        <div className="development-skills">
+                            <h3>DEVELOPMENT SKILLS</h3>
+                            <h4>Programming languages</h4>
+                            <div className="programming-languages">
+                                <img src="/images/python.png" alt="Python"/>
+                                <img src="/images/java.png" alt="Java"/>
+                                <img src="/images/Csharp.png" alt="C#"/>
+                            </div>
+                            <h4>Web Development</h4>
+                            <div className="programming-languages">
+                                <img src="/images/html.png" alt="HTML"/>
+                                <img src="/images/css.png" alt="CSS"/>
+                                <img src="/images/javascript.png" alt="JavaScript"/>
+                                <img src="/images/php.png" alt="PHP"/>
+                                <img src="/images/react.png" alt="React"/>
+                                <img src="/images/tailwindcss.png" alt="Tailwind CSS"/>
+                            </div>
+                            <h4>Data Management</h4>
+                            <div className="programming-languages">
+                                <img src="/images/mysql.png" alt="MySQL"/>
+                            </div>
+                            <h4>Tools</h4>
+                            <div className="programming-languages">
+                                <img src="/images/git.png" alt="Git"/>
+                                <img src="/images/github.png" alt="GitHub"/>
+                                <img src="/images/visualstudiocode.png" alt="Visual Studio Code"/>
+                                <img src="/images/visualstudio.png" alt="Visual Studio"/>
+                            </div>
                         </div>
-                        <h4>Web Development</h4>
-                        <div className="programming-languages">
-                            <img src="/images/html.png" alt="HTML"/>
-                            <img src="/images/css.png" alt="CSS"/>
-                            <img src="/images/javascript.png" alt="JavaScript"/>
-                            <img src="/images/php.png" alt="PHP"/>
-                            <img src="/images/react.png" alt="React"/>
-                            <img src="/images/tailwindcss.png" alt="Tailwind CSS"/>
+                        <div className="soft-skills">
+                            <h3>SOFT SKILLS</h3>
+                            <ul className="soft-skills-list">
+                                <li>Effective time management and ability to meet deadlines</li>
+                                <li>Proven ability to work under pressure</li>
+                                <li>Adaptable and quick learner across different fields</li>
+                                <li>Problem-solving with fast response in dynamic situations</li>
+                                <li>High attention to detail and accuracy</li>
+                                <li>Strong work ethic and sense of responsibility</li>
+                                <li>Quick to adapt and communicate effectively within new teams and environments</li>
+                            </ul>
                         </div>
-                        <h3>SOFT SKILLS</h3>
-                        <ul className="soft-skills-list">
-                            <li>Effective communication</li>
-                            <li>Problem-solving</li>
-                            <li>Time management</li>
-                            <li>Adaptability</li>
-                            <li>Teamwork</li>
-                        </ul>
                     </div>
                 </section>
             )}

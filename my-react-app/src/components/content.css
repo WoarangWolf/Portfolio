@@ -2,8 +2,8 @@
 
 .content {
     margin: 1rem;
-    flex: 4;
     min-width: 350px;
+    animation: fade 1s ease-in-out;
 }
 
 .content section h2 {
@@ -23,6 +23,17 @@
     padding: 1rem;
 }
 
+@keyframes fade {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /* About Me */
 
 .about-me-section img {
@@ -32,6 +43,17 @@
     border-radius: 15%;
     border: 3px solid #c09e9e;
     box-shadow: 6px 6px 15px #c09e9e;
+}
+
+@media (max-width: 430px) {
+    .about-me-section img {
+        float: right;
+        margin: 0px 10px;
+        max-width: 180px;
+        border-radius: 15%;
+        border: 3px solid #c09e9e;
+        box-shadow: 6px 6px 15px #c09e9e;
+    }
 }
 
 .about-me-section div p {
@@ -118,11 +140,29 @@
 
 /* Skills */
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.development-skills {
+    flex: 2 1 400px;
+}
+
+.soft-skills {
+    flex: 2 1 240px;
+}
+
 .skills-section div ul {
     color: #87A5CE;
     margin: 0rem 1rem;
-    padding: 0.5rem 0.5rem;
+    padding-left: 0.5rem;
     text-align: left;
+}
+
+.skills-section div ul li {
+    margin-bottom: 0.5rem;
 }
 
 .skills-section div h3 {
@@ -142,6 +182,6 @@
 }
 
 .programming-languages img {
-    max-width: 75px;
+    max-width: 65px;
     margin-right: 25px;
 }

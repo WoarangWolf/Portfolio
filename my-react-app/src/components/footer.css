@@ -1,12 +1,83 @@
+/* Footer */
 .footer {
     text-align: center;
-    flex: 0 0 auto;
     margin: 1rem;
     position: sticky;
+    display: flex;
 }
 
 .footer p {
-    color: #AAAAAA;
-    font-size: 1rem;
+    color: #2AC3D4;
+    font-size: 1.2rem;
+    font-weight: bold;
     margin: 0;
+}
+
+.footer img {
+    width: 50px;
+    margin: 0.5rem 1rem;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: auto;
+    font-family: Constantia, Cambria, Georgia, 'Courier New', Courier, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #24283b;
+    color: #87A5CE;
+    text-align: center;
+    border: 1px solid #87A5CE;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer img {
+        margin: 0.5rem;
+    }
+}
+
+@media (min-width: 851px) {
+    .footer {
+        justify-content: space-around;
+    }
+
+    /* Resume */
+    .resume-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Contact */
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
 }

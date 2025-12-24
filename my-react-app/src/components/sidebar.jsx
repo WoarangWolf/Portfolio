@@ -5,7 +5,7 @@ const profileImages = {
     "education": "/images/education.png",
     "work-experience": "/images/working.png",
     "skills": "/images/skills.png",
-    "projects": "/images/projects.png"
+    "projects": "/images/project.png"
 }
 
 function Sidebar({ page, setPage }) {
