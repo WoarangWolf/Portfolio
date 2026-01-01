@@ -17,7 +17,7 @@ function Footer() {
                 </div>
                 <div className="tooltip">
                     <img src="images/email.png" alt="email"/>
-                    <span className="tooltiptext">email@example.com</span>
+                    <span className="tooltiptext">quangdoan1805@gmail.com</span>
                 </div>
                 <div className="tooltip">
                     <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">

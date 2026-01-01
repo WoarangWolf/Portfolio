@@ -1,7 +1,7 @@
 /* Footer */
 .footer {
     text-align: center;
-    margin: 1rem;
+    margin: 0.5rem;
     position: sticky;
     display: flex;
 }
@@ -28,7 +28,7 @@
 .tooltiptext {
     visibility: hidden;
     width: auto;
-    font-family: Constantia, Cambria, Georgia, 'Courier New', Courier, serif;
+    font-family: 'Book Antiqua';
     font-size: 1.2rem;
     font-weight: bold;
     background-color: #24283b;
@@ -78,6 +78,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 0.5rem;
     }
 }

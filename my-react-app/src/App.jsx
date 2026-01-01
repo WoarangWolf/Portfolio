@@ -10,6 +10,7 @@ function App() {
 
     return (
         <div className="app">
+            <div className="background"></div>
             <Header />
             <div className="main-section">
                 <Sidebar page={page} setPage={setPage} className="sidebar"/>

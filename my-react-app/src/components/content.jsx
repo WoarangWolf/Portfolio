@@ -24,7 +24,7 @@ function Content({page}) {
                         <p>
                             Before entering the IT field, I had no programming background. I earned a degree in <strong>English Language</strong> in Vietnam,
                             specializing in <strong>Translation and Interpretation</strong>, with experience translating notarized documents.
-                            I also worked briefly as <strong>An Assistant to the Director of an international school</strong>. Later, I transitioned into a role
+                            I also worked briefly as <strong>An Assistant to the Director of An International School</strong>. Later, I transitioned into a role
                             as a <strong>Construction Project Illustrator</strong> at a Japanese company, where I challenged myself in a new field
                             while applying my self-studied Japanese language skills.
                         </p>
@@ -63,6 +63,7 @@ function Content({page}) {
                             <li>Years of education: 2025 - 2028 (expected)</li>
                             <li>Ontario College Advanced Diploma (OCAD): Computer Systems Technology</li>
                             <li>Major: Software Development</li>
+                            <li>Current GPA: 90.45%</li>
                         </ul>
                     </div>
                     <div>

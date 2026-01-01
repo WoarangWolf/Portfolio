@@ -4,9 +4,56 @@
     flex: 0 0 auto;
     margin: 1rem;
     position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .header h1 {
     font-size: clamp(2rem, 3vw, 3rem);
     margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto 1 1;
+}
+
+.audio-bubble {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    flex: 1 1 1;
+}
+
+.audio-bubble:hover {
+    transform: scale(1.2);
+}
+
+.audio-bubble img {
+    width: 40px;
+    height: 40px;
+}
+
+.audio-bubble .playing {
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
