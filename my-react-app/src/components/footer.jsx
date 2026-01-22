@@ -1,6 +1,9 @@
 import './footer.css';
 
 import printer from "../assets/images/printer.gif";
+import phone from "../assets/images/phone.gif";
+import email from "../assets/images/email.gif";
+import linkedin from "../assets/images/linkedin.gif";
 
 function Footer() {
     return(
@@ -14,16 +17,16 @@ function Footer() {
             <div className="contact">
                 <p>Contacts:</p>
                 <div className="tooltip">
-                    <img src="../assets/images/phone.png" alt="phone"/>
+                    <img src={phone} alt="phone"/>
                     <span className="tooltiptext">905-531-5277</span>
                 </div>
                 <div className="tooltip">
-                    <img src="../assets/images/email.png" alt="email"/>
-                    <span className="tooltiptext">quangdoan1805@gmail.com</span>
+                    <img src={email} alt="email"/>
+                    <span className="tooltiptext">quang.doan1@mohawkcollege.ca</span>
                 </div>
                 <div className="tooltip">
                     <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/images/linkedin.png" alt="linkedin"/>
+                        <img src={linkedin} alt="linkedin"/>
                     </a>
                     <span className="tooltiptext">My Linkedin</span>
                 </div>
