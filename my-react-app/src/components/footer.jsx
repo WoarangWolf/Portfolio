@@ -1,9 +1,9 @@
 import './footer.css';
 
 import printer from "../assets/images/printer.gif";
-import phone from "../assets/images/phone.gif";
-import email from "../assets/images/email.gif";
-import linkedin from "../assets/images/linkedin.gif";
+import phone from "../assets/images/phone.png";
+import email from "../assets/images/email.png";
+import linkedin from "../assets/images/linkedin.png";
 
 function Footer() {
     return(
