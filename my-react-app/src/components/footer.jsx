@@ -4,13 +4,14 @@ import printer from "../assets/images/printer.gif";
 import phone from "../assets/images/phone.png";
 import email from "../assets/images/email.png";
 import linkedin from "../assets/images/linkedin.png";
+import resume from "../assets/documents/resume.pdf";
 
 function Footer() {
     return(
         <footer className="footer">
             <div className="resume-download">
                 <p>Click the printer to download my Résumé.</p>
-                <a href="resume.pdf" download="resume.pdf">
+                <a href={resume} download="resume.pdf">
                     <img src={printer} alt="Download Résumé"/>
                 </a>
             </div>
