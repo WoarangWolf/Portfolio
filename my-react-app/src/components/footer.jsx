@@ -1,12 +1,14 @@
 import './footer.css';
 
+import printer from "../assets/images/printer.gif";
+
 function Footer() {
     return(
         <footer className="footer">
             <div className="resume-download">
                 <p>Click the printer to download my Résumé.</p>
                 <a href="resume.pdf" download="resume.pdf">
-                    <img src="../assets/images/printer.gif" alt="Download Résumé"/>
+                    <img src={printer} alt="Download Résumé"/>
                 </a>
             </div>
             <div className="contact">
