@@ -1,7 +1,9 @@
 import './sidebar.css';
+import aboutMe from "../assets/images/officeboy.png";
+
 
 const profileImages = {
-    "about-me": "src/assets/images/officeboy.png",
+    "about-me": aboutMe,
     "education": "src/assets/images/education.png",
     "work-experience": "src/assets/images/working.png",
     "skills": "src/assets/images/skills.png",
