@@ -25,7 +25,7 @@ function Footer() {
                     <span className="tooltiptext">quang.doan1@mohawkcollege.ca</span>
                 </div>
                 <div className="tooltip">
-                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/thanhquang-doan" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="linkedin"/>
                     </a>
                     <span className="tooltiptext">My Linkedin</span>
