@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import './header.css';
+import music from "../assets/audio/Moonlit Mirage.mp3";
+import playerIcon from "../assets/images/player.png";
 
 function Header() {
     const audioRef = useRef(null);
@@ -21,9 +23,9 @@ function Header() {
         <header className="header">
             <h1>Welcome to My Portfolio</h1>
             <div className="audio-bubble" onClick={toogleAudio}>
-                <audio ref={audioRef} source src="src/assets/audio/Moonlit Mirage.mp3" loop/>
+                <audio ref={audioRef} source src={music} loop/>
                 <span className={isPlaying ? 'playing' : 'paused'}>
-                    <img src="src/assets/images/player.png" alt="player icon" className="audio-icon"/>
+                    <img src={playerIcon} alt="player icon" className="audio-icon"/>
                 </span>
             </div>
         </header>

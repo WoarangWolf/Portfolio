@@ -79,11 +79,11 @@
 }
 
 .hutech-education li {
-    list-style-image: url('src/assets/images/logo HUTECH.png');
+    list-style-image: url('../assets/images/logo HUTECH.png');
 }
 
 .mohawk-education li {
-    list-style-image: url('src/assets/images/logo Mohawk.png');
+    list-style-image: url('../assets/images/logo Mohawk.png');
 }
 
 .education-section div h3 {
@@ -112,15 +112,15 @@
 }
 
 .vietuytin-work li {
-    list-style-image: url('src/assets/images/logo vietuytin.png');
+    list-style-image: url('../assets/images/logo vietuytin.png');
 }
 
 .asian-school-work li {
-    list-style-image: url('src/assets/images/logo asia.png');
+    list-style-image: url('../assets/images/logo asia.png');
 }
 
 .ydr-work li {
-    list-style-image: url('src/assets/images/logo YDR.png');
+    list-style-image: url('../assets/images/logo YDR.png');
 }
 
 .work-experience-section div h3 {

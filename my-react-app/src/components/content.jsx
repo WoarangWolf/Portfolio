@@ -1,5 +1,19 @@
 import './content.css';
 import { greeting } from './greeting.js';
+import me from "../assets/images/me.png";
+import python from "../assets/images/python.png";
+import java from "../assets/images/java.png";
+import cSharp from "../assets/images/Csharp.png";
+import html from "../assets/images/html.png";
+import css from "../assets/images/css.png";
+import javascript from "../assets/images/javascript.png";
+import php from "../assets/images/php.png";
+import react from "../assets/images/react.png";
+import tailwindCSS from "../assets/images/tailwindcss.png";
+import mySQL from "../assets/images/mysql.png";
+import gitHub from "../assets/images/github.png";
+import VSCode from "../assets/images/visualstudiocode.png";
+import visualStudio from "../assets/images/visualstudio.png";
 
 
 function Content({page}) {
@@ -8,7 +22,7 @@ function Content({page}) {
             {page === 'about-me' && (
                 <section className="about-me-section">
                     <h2>{greeting()}</h2>
-                    <img src="src/assets/images/me.png" alt="me"/>
+                    <img src={me} alt="me"/>
                     <div>
                         <p>
                             My name is Thanh Quang Doan. I am an international student from Vietnam, currently living in Hamilton
@@ -117,28 +131,28 @@ function Content({page}) {
                             <h3>DEVELOPMENT SKILLS</h3>
                             <h4>Programming languages</h4>
                             <div className="programming-languages">
-                                <img src="src/assets/images/python.png" alt="Python"/>
-                                <img src="src/assets/images/java.png" alt="Java"/>
-                                <img src="src/assets/images/Csharp.png" alt="C#"/>
+                                <img src={python} alt="Python"/>
+                                <img src={java} alt="Java"/>
+                                <img src={cSharp} alt="C#"/>
                             </div>
                             <h4>Web Development</h4>
                             <div className="programming-languages">
-                                <img src="src/assets/images/html.png" alt="HTML"/>
-                                <img src="src/assets/images/css.png" alt="CSS"/>
-                                <img src="src/assets/images/javascript.png" alt="JavaScript"/>
-                                <img src="src/assets/images/php.png" alt="PHP"/>
-                                <img src="src/assets/images/react.png" alt="React"/>
-                                <img src="src/assets/images/tailwindcss.png" alt="Tailwind CSS"/>
+                                <img src={html} alt="HTML"/>
+                                <img src={css} alt="CSS"/>
+                                <img src={javascript} alt="JavaScript"/>
+                                <img src={php} alt="PHP"/>
+                                <img src={react} alt="React"/>
+                                <img src={tailwindCSS} alt="Tailwind CSS"/>
                             </div>
                             <h4>Data Management</h4>
                             <div className="programming-languages">
-                                <img src="src/assets/images/mysql.png" alt="MySQL"/>
+                                <img src={mySQL} alt="MySQL"/>
                             </div>
                             <h4>Tools</h4>
                             <div className="programming-languages">
-                                <img src="src/assets/images/github.png" alt="GitHub"/>
-                                <img src="src/assets/images/visualstudiocode.png" alt="Visual Studio Code"/>
-                                <img src="src/assets/images/visualstudio.png" alt="Visual Studio"/>
+                                <img src={gitHub} alt="GitHub"/>
+                                <img src={VSCode} alt="Visual Studio Code"/>
+                                <img src={visualStudio} alt="Visual Studio"/>
                             </div>
                         </div>
                         <div className="soft-skills">

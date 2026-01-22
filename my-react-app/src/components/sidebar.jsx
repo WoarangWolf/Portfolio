@@ -1,13 +1,17 @@
 import './sidebar.css';
 import aboutMe from "../assets/images/officeboy.png";
+import education from "../assets/images/education.png";
+import workEXP from "../assets/images/working.png";
+import skills from "../assets/images/skills.png";
+import projects from "../assets/images/project.png";
 
 
 const profileImages = {
     "about-me": aboutMe,
-    "education": "src/assets/images/education.png",
-    "work-experience": "src/assets/images/working.png",
-    "skills": "src/assets/images/skills.png",
-    "projects": "src/assets/images/project.png"
+    "education": education,
+    "work-experience": workEXP,
+    "skills": skills,
+    "projects": projects
 }
 
 function Sidebar({ page, setPage }) {
