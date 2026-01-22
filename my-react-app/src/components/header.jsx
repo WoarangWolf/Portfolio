@@ -21,9 +21,9 @@ function Header() {
         <header className="header">
             <h1>Welcome to My Portfolio</h1>
             <div className="audio-bubble" onClick={toogleAudio}>
-                <audio ref={audioRef} source src="/audio/Moonlit Mirage.mp3" loop/>
+                <audio ref={audioRef} source src="src/assets/audio/Moonlit Mirage.mp3" loop/>
                 <span className={isPlaying ? 'playing' : 'paused'}>
-                    <img src="/images/player.png" alt="player icon" className="audio-icon"/>
+                    <img src="src/assets/images/player.png" alt="player icon" className="audio-icon"/>
                 </span>
             </div>
         </header>

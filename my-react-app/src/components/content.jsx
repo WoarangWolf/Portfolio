@@ -8,7 +8,7 @@ function Content({page}) {
             {page === 'about-me' && (
                 <section className="about-me-section">
                     <h2>{greeting()}</h2>
-                    <img src="/images/me.png" alt="me"/>
+                    <img src="src/assets/images/me.png" alt="me"/>
                     <div>
                         <p>
                             My name is Thanh Quang Doan. I am an international student from Vietnam, currently living in Hamilton
@@ -117,29 +117,28 @@ function Content({page}) {
                             <h3>DEVELOPMENT SKILLS</h3>
                             <h4>Programming languages</h4>
                             <div className="programming-languages">
-                                <img src="/images/python.png" alt="Python"/>
-                                <img src="/images/java.png" alt="Java"/>
-                                <img src="/images/Csharp.png" alt="C#"/>
+                                <img src="src/assets/images/python.png" alt="Python"/>
+                                <img src="src/assets/images/java.png" alt="Java"/>
+                                <img src="src/assets/images/Csharp.png" alt="C#"/>
                             </div>
                             <h4>Web Development</h4>
                             <div className="programming-languages">
-                                <img src="/images/html.png" alt="HTML"/>
-                                <img src="/images/css.png" alt="CSS"/>
-                                <img src="/images/javascript.png" alt="JavaScript"/>
-                                <img src="/images/php.png" alt="PHP"/>
-                                <img src="/images/react.png" alt="React"/>
-                                <img src="/images/tailwindcss.png" alt="Tailwind CSS"/>
+                                <img src="src/assets/images/html.png" alt="HTML"/>
+                                <img src="src/assets/images/css.png" alt="CSS"/>
+                                <img src="src/assets/images/javascript.png" alt="JavaScript"/>
+                                <img src="src/assets/images/php.png" alt="PHP"/>
+                                <img src="src/assets/images/react.png" alt="React"/>
+                                <img src="src/assets/images/tailwindcss.png" alt="Tailwind CSS"/>
                             </div>
                             <h4>Data Management</h4>
                             <div className="programming-languages">
-                                <img src="/images/mysql.png" alt="MySQL"/>
+                                <img src="src/assets/images/mysql.png" alt="MySQL"/>
                             </div>
                             <h4>Tools</h4>
                             <div className="programming-languages">
-                                <img src="/images/git.png" alt="Git"/>
-                                <img src="/images/github.png" alt="GitHub"/>
-                                <img src="/images/visualstudiocode.png" alt="Visual Studio Code"/>
-                                <img src="/images/visualstudio.png" alt="Visual Studio"/>
+                                <img src="src/assets/images/github.png" alt="GitHub"/>
+                                <img src="src/assets/images/visualstudiocode.png" alt="Visual Studio Code"/>
+                                <img src="src/assets/images/visualstudio.png" alt="Visual Studio"/>
                             </div>
                         </div>
                         <div className="soft-skills">

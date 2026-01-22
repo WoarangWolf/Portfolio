@@ -1,11 +1,11 @@
 import './sidebar.css';
 
 const profileImages = {
-    "about-me": "/images/officeboy.png",
-    "education": "/images/education.png",
-    "work-experience": "/images/working.png",
-    "skills": "/images/skills.png",
-    "projects": "/images/project.png"
+    "about-me": "src/assets/images/officeboy.png",
+    "education": "src/assets/images/education.png",
+    "work-experience": "src/assets/images/working.png",
+    "skills": "src/assets/images/skills.png",
+    "projects": "src/assets/images/project.png"
 }
 
 function Sidebar({ page, setPage }) {
