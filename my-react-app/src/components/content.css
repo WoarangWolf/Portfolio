@@ -6,23 +6,6 @@
     animation: fade 1s ease-in-out;
 }
 
-.content section h2 {
-    color: #4287F7;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    text-align: center;
-    font-style: italic;
-    margin: 0;
-    padding: 0.5rem;
-}
-
-.content section p {
-    color: #D4D4D4;
-    font-size: clamp(1rem, 1.05vw, 1.1rem);
-    line-height: 1.6;
-    margin: 0;
-    padding: 1rem;
-}
-
 @keyframes fade {
     from { 
         opacity: 0;
@@ -32,6 +15,15 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+.content section h2 {
+    color: #4287F7;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 /* About Me */
@@ -184,4 +176,53 @@
 .programming-languages img {
     max-width: 65px;
     margin-right: 25px;
+}
+
+/* Projects */
+
+.project-item {
+    border: solid 2px #c09e9e;
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-description {
+    flex: 2 1 300px;
+}
+
+.project-item img {
+    flex: 2 1 auto;
+    max-width: 200px;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.project-item img:hover {
+    box-shadow: 0 0 15px #5591f1;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-item h3 a {
+    color: #edf84f;
+    font-size: 1.25rem;
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.project-item li {
+    color: #87A5CE;
+    padding: 0.2rem 0rem;
+    line-height: 1.4;
+}
+
+.projects-section p {
+    color: white;
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
 }

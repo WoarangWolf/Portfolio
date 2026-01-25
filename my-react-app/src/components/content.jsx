@@ -14,6 +14,8 @@ import gitHub from "../assets/images/github.png";
 import VSCode from "../assets/images/visualstudiocode.png";
 import visualStudio from "../assets/images/visualstudio.png";
 import intelliJ from "../assets/images/intellij.png";
+import petCafe from "../assets/images/petCafe.png";
+import colorEase from "../assets/images/colorEase.png";
 
 
 function Content({page}) {
@@ -175,6 +177,40 @@ function Content({page}) {
             {page === 'projects' && (
                 <section className="projects-section">
                     <h2>Projects</h2>
+                    <p><em>*Clicking on the project titles will take you to the respective project pages.</em></p>
+                    <div>
+                        <div className="project-item">
+                            <div className="project-description">
+                                <h3><a href="https://youtu.be/y5mU7odOGSY" target="_blank" rel="noopener noreferrer">Pet Café Website</a></h3>
+                                <ul>
+                                    <li>
+                                        A pet café website that has multiple pages for the introduction, events, menu, job postings,
+                                        blog posts, and contact information.
+                                    </li>
+                                    <li>Included mini map for a clear location, and comment section at blog posts for customer interaction.</li>
+                                    <li>Built using WordPress.</li>
+                                </ul>
+                            </div>
+                            <img src={petCafe} alt="Pet Café Website"/>
+                        </div>
+                        <div className="project-item">
+                            <div className="project-description">
+                                <h3><a href="https://github.com/QuangDoan7/ColorEase" target="_blank" rel="noopener noreferrer">Color Ease - A Color Vision Deficiency Assistance Application</a></h3>
+                                <ul>
+                                    <li>
+                                        Motivated by cousin's colorblind condition, a real-time camera-based application designed and
+                                        built to assist individuals with color vision deficiency in distinguishing colors more effectively
+                                        (developed for Deuteranopia, being expanded to more conditions of color blindness later).
+                                    </li>
+                                    <li>
+                                        Built using Python, with research and applied concepts related to color vision deficiency and image processing,
+                                        focusing on Deuteranopia and planned expansion to additional conditions
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src={colorEase} alt="Color Ease Application"/>
+                        </div>
+                    </div>
                 </section>
             )}
 
